@@ -27,6 +27,7 @@ Using GIT remote repo to Manage JBoss EAP configuration data (Based on https://a
 </configuration>
 ~~~
 4. Go to JBOSS_HOME/standalone and push the `configuration` dir to the repo (initial commit):
+
 This step is made just once:
 ~~~
  cd $JBOSS_HOME/standalone
