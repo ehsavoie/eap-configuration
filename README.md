@@ -26,9 +26,10 @@ Using GIT remote repo to Manage JBoss EAP configuration data (Based on https://a
   </authentication-client>
 </configuration>
 ~~~
-4. Go to JBOSS_HOME/standalone and push the `configuration` dir to the repo (this steps is only to push Configuration chages):
+4. Go to JBOSS_HOME/standalone and push the `configuration` dir to the repo (initial commit):
+This step is made just once:
 ~~~
- cd JBOSS_HOME/standalone
+ cd $JBOSS_HOME/standalone
  git init
  git add configuration 
  git commit -am "EAP configuration test"
@@ -36,6 +37,12 @@ Using GIT remote repo to Manage JBoss EAP configuration data (Based on https://a
  git remote add origin https://github.com/alexbarbosa1989/eap-configuration.git
  git push -u origin main
 ~~~
+Once the repo has the `configuration` directory, just need to clone it into $JBOSS_HOME/standalone dir:
+~~~
+ cd $JBOSS_HOME/standalone
+ git clone https://github.com/alexbarbosa1989/eap-configuration.git
+~~~
+
 5. Go to JBOSS_EAP home and start the JBoss instance with the Git repo files
 ~~~
 cd JBOSS_HOME
