@@ -28,7 +28,7 @@ Using GIT remote repo to Manage JBoss EAP configuration data (Based on https://a
 ~~~
 4. Go to JBOSS_HOME/standalone and push the `configuration` dir to the repo (initial commit):
 
-This step is made just once:
+This step is made just once (already done in current repo):
 ~~~
  cd $JBOSS_HOME/standalone
  git init
@@ -38,7 +38,7 @@ This step is made just once:
  git remote add origin https://github.com/alexbarbosa1989/eap-configuration.git
  git push -u origin main
 ~~~
-Once the repo has the `configuration` directory, just need to clone it into $JBOSS_HOME/standalone dir:
+Once the repo has the `configuration` directory, You just need to clone it into $JBOSS_HOME/standalone dir:
 ~~~
  cd $JBOSS_HOME/standalone
  git clone https://github.com/alexbarbosa1989/eap-configuration.git
