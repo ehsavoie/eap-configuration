@@ -1,0 +1,8 @@
+data/*
+!data
+!data/content
+configuration/logging.properties
+deployments/
+log/
+tmp/
+configuration/standalone_xml_history/
