@@ -41,6 +41,7 @@
     </extensions>
     <system-properties>
         <property name="test" value="test"/>
+        <property name="test2" value="test2"/>
     </system-properties>
     <management>
         <security-realms>
